@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bk6lk25ynbtdu" path="res://Scenes/MeshGeneration/PlateMeshGenerator/MeshGenerator.cs" id="1_f3ccy"]
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_f3ccy"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_mikxt"]
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 1, 1e-05, 1),
 "attribute_data": PackedByteArray("AAAAAAAAgL8AAAAAAACAvwAAAAAAAIC/AAAAAAAAgL8="),
@@ -15,8 +15,8 @@ _surfaces = [{
 "vertex_data": PackedByteArray("AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAIA/AAAAAAAAAAAAAIA//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/78=")
 }]
 
-[node name="CreatePlate" type="Node3D"]
+[node name="PlateMeshGenerator" type="Node3D"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-mesh = SubResource("ArrayMesh_f3ccy")
+mesh = SubResource("ArrayMesh_mikxt")
 script = ExtResource("1_f3ccy")

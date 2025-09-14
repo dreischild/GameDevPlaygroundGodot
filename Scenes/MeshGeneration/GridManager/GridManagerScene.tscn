@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://duy30y17bbew"]
+
+[ext_resource type="Script" uid="uid://edf8tjha5xum" path="res://Scenes/MeshGeneration/GridManager/GridManager.cs" id="1_ubrlm"]
+[ext_resource type="Script" uid="uid://cjsm87ehqitmi" path="res://Scenes/MeshGeneration/GridManager/BuildingPlacer.cs" id="2_k2luk"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="GridManager" type="Node3D" parent="."]
+script = ExtResource("1_ubrlm")
+
+[node name="BuildingPlacer" type="Node3D" parent="."]
+script = ExtResource("2_k2luk")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 2.74207, 14.2929, 2.50638)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 4.86254, 0)
+light_energy = 15.303
