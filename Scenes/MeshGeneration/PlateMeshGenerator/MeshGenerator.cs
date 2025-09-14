@@ -2,6 +2,10 @@ using Godot;
 using System;
 using System.Collections.Generic;
 
+/**
+ * Tutorial unter: https://www.youtube.com/watch?v=Sg4mrxbiPyU
+ */
+
 [Tool]
 public partial class MeshGenerator : MeshInstance3D
 {
