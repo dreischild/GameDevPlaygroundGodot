@@ -1,8 +1,8 @@
 [gd_scene load_steps=3 format=4 uid="uid://coo2utwuum10p"]
 
-[ext_resource type="Script" uid="uid://bk6lk25ynbtdu" path="res://Scenes/MeshGeneration/PlateMeshGenerator/MeshGenerator.cs" id="1_c6ckb"]
+[ext_resource type="Script" uid="uid://bk6lk25ynbtdu" path="res://Scenes/MeshGeneration/PlateMeshGenerator/MeshGenerator.cs" id="1_f3ccy"]
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_0357s"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_f3ccy"]
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 1, 1e-05, 1),
 "attribute_data": PackedByteArray("AAAAAAAAgL8AAAAAAACAvwAAAAAAAIC/AAAAAAAAgL8="),
@@ -18,5 +18,5 @@ _surfaces = [{
 [node name="CreatePlate" type="Node3D"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-mesh = SubResource("ArrayMesh_0357s")
-script = ExtResource("1_c6ckb")
+mesh = SubResource("ArrayMesh_f3ccy")
+script = ExtResource("1_f3ccy")
