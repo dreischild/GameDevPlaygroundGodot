@@ -23,7 +23,7 @@ CellSize = 1.0
 script = ExtResource("2_k2luk")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.741133, 0.447849, -0.500153, 0, 0.744987, 0.667079, 0.671358, -0.494394, 0.552134, -5.97006, 5.53236, 8.2543)
+transform = Transform3D(0.740366, 0.481271, -0.469294, -0.0337104, 0.723846, 0.689138, 0.671358, -0.494394, 0.552134, -2.25453, 5.53236, 6.05054)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 4.86254, 0)
