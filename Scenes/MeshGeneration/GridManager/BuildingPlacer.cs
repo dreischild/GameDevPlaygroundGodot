@@ -40,7 +40,6 @@ public partial class BuildingPlacer : Node3D
 
 		var query = PhysicsRayQueryParameters3D.Create(from, to);
 		var result = spaceState.IntersectRay(query);
-		GD.Print("from: " + from + " to: " + to + " result:" + result);
 
 		if (result.Count > 0)
 		{

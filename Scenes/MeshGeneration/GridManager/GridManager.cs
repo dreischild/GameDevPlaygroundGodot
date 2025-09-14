@@ -31,6 +31,15 @@ public partial class GridManager : Node3D
                 mat.Transparency = BaseMaterial3D.TransparencyEnum.Alpha;
                 mesh.SetSurfaceOverrideMaterial(0, mat);
 
+				// StaticBody3D + CollisionShape3D hinzufügen
+				var body = new StaticBody3D();
+				var shape = new CollisionShape3D();
+				shape.Shape = new BoxShape3D { Size = new Vector3(CellSize, 0.1f, CellSize) };
+
+				body.AddChild(shape);
+				body.Position = mesh.Position;
+				AddChild(body);
+
 				AddChild(mesh);
             }
         }
